@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Header",
+  "version": "1.92",
+  "description": "Add custom headers to requests",
+  "permissions": ["storage", "declarativeNetRequest"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon":{
+      "16":"header.png",
+      "32":"header.png",
+      "48": "header.png",
+      "128": "header.png"
+
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
